@@ -1,0 +1,21 @@
+You have to announce the result of a lucky draw. Given the name of the winner, display the result on the screen.
+
+Input Format
+
+Input is handled in the code stub, focus on the print statements.
+
+Constraints
+
+None
+
+Output Format
+
+You have to print the result of the lucky draw in a single line as shown in the sample output.
+
+Sample Input 0
+
+Divjot Singh
+Sample Output 0
+
+Divjot Singh you have won!
+

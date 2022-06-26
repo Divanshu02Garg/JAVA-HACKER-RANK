@@ -1,0 +1,17 @@
+Given a number and it's power calculate the answer! (You are allowed to use Math library) Give the result upto 4 decimal places.
+
+Input Format
+
+Two numbers (in double) are given . First number denotes the base and the second number denotes its power.
+
+Constraints
+
+None
+
+Sample Input 0
+
+2 5
+Sample Output 0
+
+32.0000
+

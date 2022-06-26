@@ -1,0 +1,24 @@
+In this challenge, you have to take the following information from the user:
+
+Name
+Age
+Salary
+Gender
+Married
+and display it on the screen.
+
+Sample Input 0
+
+Elon Musk
+55
+9999.532
+M
+true
+Sample Output 0
+
+Name: Elon Musk
+Age: 55
+Salary: 9999.532
+Gender: M
+Married: true
+

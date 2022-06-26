@@ -1,0 +1,16 @@
+Convert temperature in Fahrenheit to temperature in Celcius. Display the result upto 3 decimal places.
+
+Input Format
+
+A single line containing Temperature in Fahrenheit (in float).
+
+Constraints
+
+None
+
+Sample Input 0
+
+43
+Sample Output 0
+
+6.111

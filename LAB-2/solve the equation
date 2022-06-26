@@ -1,0 +1,22 @@
+Given a and b, find the value ofimage.
+
+Display result upto 3 decimal places.
+
+Input Format
+
+Two values (in double) denoting a and b.
+
+Constraints
+
+None
+
+Output Format
+
+A single double value representing result of the equation upto 3 decimal places.
+
+Sample Input 0
+
+2.3 4.87
+Sample Output 0
+
+368.602

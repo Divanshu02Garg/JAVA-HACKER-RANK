@@ -1,0 +1,24 @@
+Given a and b, calculate the value of:
+
+image
+
+Display the value upto 2 decimal places.
+
+Input Format
+
+A single line containing two numbers a and b (in double).
+
+Constraints
+
+a!=b
+
+Output Format
+
+A single number (in double) denoting answer to the equation upto 2 decimal places.
+
+Sample Input 0
+
+2 3
+Sample Output 0
+
+-5.00

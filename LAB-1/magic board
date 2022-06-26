@@ -1,0 +1,17 @@
+Ritik wants a magic board which displays a character for a corresponding number for his science project. Help him to develop such an application.
+
+Input Format
+
+A single integer is given in input.
+
+Constraints
+
+None
+Sample Input 0
+
+115
+
+Sample Output 0
+
+115 - s
+

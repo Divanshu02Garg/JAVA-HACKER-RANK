@@ -1,0 +1,21 @@
+Given radius (in double) of a circle, find it's area. Take π = 3.14. Display the result upto 3 decimal places.
+
+Input Format
+
+A single number (in double) denoting radius.
+
+Constraints
+
+None
+
+Output Format
+
+A single line denoting area of the circle (in double) upto 3 decimal places.
+
+Sample Input 0
+
+8.45
+Sample Output 0
+
+224.204
+
