@@ -1,4 +1,4 @@
-In this challenge, you have to take the following information from the user:
+<!-- In this challenge, you have to take the following information from the user:
 
 Name
 Age
@@ -6,6 +6,16 @@ Salary
 Gender
 Married
 and display it on the screen.
+
+Input Format
+
+There are five lines in the input.
+
+First line contains a String (name).
+Second line contains an integer (age).
+Third line contains a number in double (salary).
+Fourth line contains a character (gender).
+Fifth line contains a boolean value (marital status).
 
 Sample Input 0
 
@@ -20,7 +30,24 @@ Name: Elon Musk
 Age: 55
 Salary: 9999.532
 Gender: M
-Married: true
+Married: true -->
 
+import java.util.*;
+import java.io.*;
+public class main{
+  public static void main(String[] args){
+    Scanner scn = new Scanner (System.in);
+     String Name = scn.nextString();
+     int Age = scn.nextInt();
+     double Salary = scn.nextDouble(); 
+     char Gender   = scn.next().char(0);    
+     Boolean Married = scn.nextBoolean();
 
+     System.out.println(" Name: " +Name);
+     System.out.println(" Age: " +Age);
+     System.out.println(" Salary: " +Salary);
+     System.out.println(" Gender: " +Gender);
+     System.out.println(" Married: " +Married);
 
+}
+}
