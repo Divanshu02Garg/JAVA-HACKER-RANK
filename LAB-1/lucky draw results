@@ -19,3 +19,16 @@ Sample Output 0
 
 Divjot Singh you have won!
 
+
+
+import java.util.*
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+     Scanner scn = new Scanner(System.in);
+     String Name = scn.nextString();
+    System.out.println(Name  + " you have won!");
+    }
+}
+
+

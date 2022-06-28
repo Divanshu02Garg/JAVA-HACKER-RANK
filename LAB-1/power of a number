@@ -1,17 +1,30 @@
-Given a number and it's power calculate the answer! (You are allowed to use Math library) Give the result upto 4 decimal places.
+// Given a number and it's power calculate the answer! (You are allowed to use Math library) Give the result upto 4 decimal places.
 
-Input Format
+// Input Format
 
-Two numbers (in double) are given . First number denotes the base and the second number denotes its power.
+// Two numbers (in double) are given . First number denotes the base and the second number denotes its power.
 
-Constraints
+// Constraints
 
-None
+// None
 
-Sample Input 0
+// Sample Input 0
 
-2 5
-Sample Output 0
+// 2 5
+// Sample Output 0
 
-32.0000
+// 32.0000
 
+
+import java.util.*;
+import java .io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+    double a = scn.nextint();
+    double b = scn.nextint();
+    double c = Math.pow(a,b);
+
+    System.out.format("%.4f",c);
+    }
+    }

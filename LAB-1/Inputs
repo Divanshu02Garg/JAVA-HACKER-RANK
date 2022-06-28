@@ -1,36 +1,36 @@
-<!-- In this challenge, you have to take the following information from the user:
+// <!-- In this challenge, you have to take the following information from the user:
 
-Name
-Age
-Salary
-Gender
-Married
-and display it on the screen.
+// Name
+// Age
+// Salary
+// Gender
+// Married
+// and display it on the screen.
 
-Input Format
+// Input Format
 
-There are five lines in the input.
+// There are five lines in the input.
 
-First line contains a String (name).
-Second line contains an integer (age).
-Third line contains a number in double (salary).
-Fourth line contains a character (gender).
-Fifth line contains a boolean value (marital status).
+// First line contains a String (name).
+// Second line contains an integer (age).
+// Third line contains a number in double (salary).
+// Fourth line contains a character (gender).
+// Fifth line contains a boolean value (marital status).
 
-Sample Input 0
+// Sample Input 0
 
-Elon Musk
-55
-9999.532
-M
-true
-Sample Output 0
+// Elon Musk
+// 55
+// 9999.532
+// M
+// true
+// Sample Output 0
 
-Name: Elon Musk
-Age: 55
-Salary: 9999.532
-Gender: M
-Married: true -->
+// Name: Elon Musk
+// Age: 55
+// Salary: 9999.532
+// Gender: M
+// Married: true -->
 
 import java.util.*;
 import java.io.*;
