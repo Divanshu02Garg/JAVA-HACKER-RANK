@@ -41,3 +41,41 @@ public class main {
         System.out.println()
     }
 }
+
+
+
+import java.util.io.*;
+import java.util.*;
+public class main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int Pizza = scn.nextInt();
+        int Puffs = scn.nextInt();
+        int Drinks = scn.nextInt();
+        int Price = Pizza*100 +Puffs*20+ Drink*10;
+        
+        System.out.println("No of Pizza:" +Pizza);
+        System.out.println("No of Puffs:" +Puffs);
+        System.out.println("No of Cold Drink:" +Drink);
+        System.out.println("Total Price=" +price);
+        System.out.println("ENJOY THE SHOW!!!");
+    }
+}
+
+import java.util.Scanner;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int pizza =sc.nextInt(); 
+        int puff =sc.nextInt(); 
+        int drink =sc.nextInt(); 
+        int price=pizza*100+puff*20+drink*10;
+        System.out.println("No of Pizzas: "+pizza);
+        System.out.println("No of Puffs: "+puff);
+        System.out.println("No of Cold Drinks: "+drink);
+        System.out.println("Total price = " +price);
+        System.out.println("ENJOY THE SHOW!!!");
+    }
+}

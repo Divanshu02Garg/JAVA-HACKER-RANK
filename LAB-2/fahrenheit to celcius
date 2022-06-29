@@ -1,16 +1,27 @@
-Convert temperature in Fahrenheit to temperature in Celcius. Display the result upto 3 decimal places.
+// Convert temperature in Fahrenheit to temperature in Celcius. Display the result upto 3 decimal places.
 
-Input Format
+// Input Format
 
-A single line containing Temperature in Fahrenheit (in float).
+// A single line containing Temperature in Fahrenheit (in float).
 
-Constraints
+// Constraints
 
-None
+// None
 
-Sample Input 0
+// Sample Input 0
 
-43
-Sample Output 0
+// 43
+// Sample Output 0
 
-6.111
+// 6.111
+
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner (System.in);
+         double f = scn.nextFloat();
+         double c = ((f-32)*5/9);
+        System.out.format("%.3f",c);
+    }
+}

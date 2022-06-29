@@ -1,5 +1,7 @@
 Given a and b, find the value ofimage.
 
+a3+a2b+2a2b+2ab2+ab2+b3
+
 Display result upto 3 decimal places.
 
 Input Format
@@ -20,3 +22,17 @@ Sample Input 0
 Sample Output 0
 
 368.602
+
+
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a= sc.nextDouble();
+        double b= sc.nextDouble();
+        double c = Math.pow(a,b);
+        // (a+b)*(a+b)*(a+b)
+        System.out.format("%.3f",Math.pow((a+b),3));
+    }
+}

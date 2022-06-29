@@ -1,21 +1,34 @@
-Given radius (in double) of a circle, find it's area. Take π = 3.14. Display the result upto 3 decimal places.
+// Given radius (in double) of a circle, find it's area. Take π = 3.14. Display the result upto 3 decimal places.
 
-Input Format
+// Input Format
 
-A single number (in double) denoting radius.
+// A single number (in double) denoting radius.
 
-Constraints
+// Constraints
 
-None
+// None
 
-Output Format
+// Output Format
 
-A single line denoting area of the circle (in double) upto 3 decimal places.
+// A single line denoting area of the circle (in double) upto 3 decimal places.
 
-Sample Input 0
+// Sample Input 0
 
-8.45
-Sample Output 0
+// 8.45
+// Sample Output 0
 
-224.204
+// 224.204
 
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void mai (String[] args){
+        Scanner scn = new Scanner (System.in);
+        
+        double pie = 3.14, area;
+        
+        double r = scn.nextDouble();
+        area = 3.14 *r*r;
+        System.out.format("%.3f", area);
+    }
+}

@@ -1,0 +1,36 @@
+A rectangular park is 'L' metre long and 'W' metre wide. A path 'P' metre wide is constructed outside the park. Find the area of the path.
+
+Display the area upto 2 decimal places.
+
+Input Format
+
+Three numbers (in float) representing 'L', 'W' and 'P'.
+
+Constraints
+
+1<=L,W<=100
+0<=P<=100
+Output Format
+
+Area of the path (in float).
+
+Sample Input 0
+
+4.0 3.0 0.0
+Sample Output 0
+
+Area of the path is 0.00 square metres.
+
+import java.io.*;
+import java.util.*;
+public class main {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+        float l= scn.nextFloat();
+        float w= scn.nextFloat();
+        float p= scn.nextFloat();
+        double a =(((l+2*p)*(w+2*p))-l*w);
+        System.out.format("Area of the path is %.2f"+ " square metres.",a);
+    }
+}
