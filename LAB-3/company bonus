@@ -1,0 +1,39 @@
+The company has decided to give a 5% bonus to all the employees who have served the company for 5 years or more. Given the employee's current salary and the years he/she has served the company for, find out the final salary (upto 2 decimal places).
+
+Input Format
+
+Two numbers will be given, salary (double) and years served (integer).
+
+Constraints
+
+None
+
+Output Format
+
+A single number (double) representing the renewed salary of the employee.
+
+Sample Input 0
+
+98345 2
+Sample Output 0
+
+98345.00
+Explanation 0
+
+No bonus for employees who have served less than 5 years. So, the salary remains same.
+
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner (System.in);
+         double salary = scn.nextDouble();
+        
+         int years = scn.nextInt();
+         if(years>=5){
+             salary =  salary+0.05*salary;
+             }
+             System.out.format("%.2f",salary);
+    }
+}

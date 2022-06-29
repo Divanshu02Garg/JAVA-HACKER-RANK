@@ -1,0 +1,37 @@
+A company has decided to give a 12% discount to customers who have shopped for atleast Rs. 1000. Given the total MRP of goods purchased by a customer, return the bill amount of the customer (upto 3 decimal places).
+
+Input Format
+
+A single number (in double) representing MRP.
+
+Constraints
+
+None
+
+Output Format
+
+A single number (in double) representing the total bill amount.
+
+Sample Input 0
+
+345
+Sample Output 0
+
+345.000
+Explanation 0
+
+No discount for customers purchasing goods worth less than Rs. 1000
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner (System.in);
+         double mrp = scn.nextDouble();
+         if(mrp>=1000){
+            mrp -= 0.12*mrp;
+
+         }
+         System.out.println("%.3f",mrp);
+        }
+        }

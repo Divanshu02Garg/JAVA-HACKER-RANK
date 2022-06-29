@@ -1,0 +1,38 @@
+There is a new rule in Delhi to check for pollution. Vehicles with even number can run on even dates while vehicles with odd number can run on odd dates. Given the date and the car number, find out if the car can run on that date!
+
+Input Format
+
+Two integers (Date and car number)
+
+Constraints
+
+1000<=Car number<=9999
+1<=Date<=31
+Output Format
+
+If the car can run, print "YES" otherwise print "NO".
+
+Sample Input 0
+
+2 8673
+Sample Output 0
+
+NO
+Explanation 0
+
+Odd number vehicles can not run on even dates.
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner (System.in);
+         int date = scn.nextInt();
+         int number = scn.nextInt();
+         if(date%2==0 && number%2==0 || date%2==1 && number%2==1){
+            System.out.println("YES");
+         }
+         else
+         System.out.println("NO");
+        }
+    }

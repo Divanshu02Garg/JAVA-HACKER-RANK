@@ -1,0 +1,42 @@
+Given two numbers as integers, find out the greater of the two.
+
+Input Format
+
+Two integers
+
+Constraints
+
+None
+
+Output Format
+
+A single integer
+
+Sample Input 0
+
+723 -3234
+Sample Output 0
+
+723
+Explanation 0
+
+723 > -3234
+
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner (System.in);
+         int a = scn.nextInt();
+         int b = scn.nextInt();
+          if(a>b){
+                          
+           System.out.println(a);
+          }
+        else
+           System.out.println(b);
+    }
+}
+                        
+

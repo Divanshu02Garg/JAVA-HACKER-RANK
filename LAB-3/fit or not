@@ -1,0 +1,41 @@
+"Coderman" is training today. He has to take three rounds of the field.He measures his heart rate after every round. He will pass only if the average heart rate is below 175.00
+
+Input Format
+
+Three numbers (in float) representing the heart rate after each round
+
+Constraints
+
+None
+
+Output Format
+
+If the average heart rate is within limits, print "Pass" else print "Fail" (without quotes).
+
+Sample Input 0
+
+150 160 170
+Sample Output 0
+
+Pass
+Explanation 0
+
+Average(150,160,170) = 160; 160<175. So, it's a Pass
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner (System.in);
+         float a= scn.nextFloat();
+         float b= scn.nextFloat();
+         float c= scn.nextFloat();
+        
+        float avg = (a+b+c)/3;
+        if(avg<175){
+            System.out.println("Pass");
+        }
+        else
+            System.out.println("Fail");
+    }
+}
