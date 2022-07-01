@@ -1,0 +1,48 @@
+Our hero "Coderman" has been given a problem to solve. Given an input integer, he has to find out whether it is positive, negative or zero.
+
+Input Format
+
+A single integer is given as input.
+
+Constraints
+
+None
+
+Output Format
+
+Given an input:
+
+Print "Positive" if it's greater than zero.
+Print "Negative" if it's lesser than zero.
+Print "Zero" if it is equal to zero.
+Sample Input 0
+
+10
+Sample Output 0
+
+Positive
+Sample Input 1
+
+-5
+Sample Output 1
+
+Negative
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        
+        int num = scn.nextInt();
+        
+        if(num>0){
+            System.out.println("Positive");
+        }
+        else if (num<0)
+            System.out.println("Negative");
+        
+        else
+            System.out.println("Zero");
+    }
+}

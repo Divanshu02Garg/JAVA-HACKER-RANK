@@ -1,0 +1,56 @@
+Coderman just got back his report card where his final percentage is given but he does not know his grade. Given the overall percentage, help him find his grade.
+
+Input Format
+
+A single number (in double)
+
+Constraints
+
+None
+
+Output Format
+
+Display the grade according to:
+
+90 < A <= 100
+80 < B <= 90
+65 < C <= 80
+50 < D <= 65
+35 < E <= 50
+F <= 35
+Sample Input 0
+
+95
+Sample Output 0
+
+A
+Explanation 0
+
+Student gets A for 95% marks
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner (System.in);
+       double marks = scn.nextDouble();
+         if(marks > 90 && marks<=100){
+             System.out.println("A");
+         }
+       else if(marks > 80 && marks<=90){
+             System.out.println("B");
+         }
+       else if(marks > 65 && marks<=80){
+             System.out.println("C");
+         }
+       else if(marks > 50 && marks<=65){
+             System.out.println("D");
+         }
+       else if(marks > 35 && marks<=50){
+             System.out.println("E");
+         }
+        else if  (marks<=35)
+             System.out.println("F");
+        
+    }
+}

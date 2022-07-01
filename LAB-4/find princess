@@ -1,0 +1,38 @@
+Coderman has to find the Princess! The princess has been kidnapped by Evilini but coderman has managed to find her co-ordinates. In order to reach her, Coderman first needs to find out in which quadrant the princess currently is in. Time is running out, help him!
+
+
+
+Input Format
+
+Two double variables x, y
+
+Constraints
+
+None
+
+Output Format
+
+The quadrant in which the princess is kept prisoner (1, 2, 3 or 4)
+
+Sample Input 0
+
+2.3 4.6
+Sample Output 0
+
+1
+Explanation 0
+
+x and y both co-ordinates are positive hence "Quadrant 1"
+
+Sample Input 1
+
+-3.6 9.8
+Sample Output 1
+
+2
+Explanation 1
+
+The point (-3.6, 9.8) lies in the second quadrant.
+
+
+

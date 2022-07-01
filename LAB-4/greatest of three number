@@ -1,0 +1,44 @@
+The risk is high but so is the reward. The evil magician is back and Coderman needs your help in defeating him. Given three numbers, help Coderman find the greatest of the three.
+
+Input Format
+
+Three integers
+
+Constraints
+
+None
+
+Output Format
+
+A single integer
+
+Sample Input 0
+
+2 6 8
+Sample Output 0
+
+8
+Explanation 0
+
+8 is greater than 2 and 6.
+
+import java.util.*;
+import java.io.*;
+
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+       int a = scn.nextInt();
+       int b = scn.nextInt();
+       int c = scn.nextInt();
+         if(a>b && a>c){
+             System.out.println(a);
+         }
+         else if (b>a && b>c){
+         System.out.println(b); 
+        }
+        else{
+            System.out.println(c);
+        }
+    }
+}

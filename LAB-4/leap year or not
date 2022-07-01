@@ -1,0 +1,42 @@
+Coderman has travelled in time, he needs to find out if it's a leap year or not in order win this time. Can you help him out?
+
+Input Format
+
+A single integer
+
+Constraints
+
+None
+
+Output Format
+
+Given the year:
+
+Print "Leap" if it is a leap year.
+Print "Not Leap" is it is not a leap year.
+Sample Input 0
+
+2001
+Sample Output 0
+
+import java.util.*;
+import java.io.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        
+        int year = scn.nextInt();
+        
+        if(((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
+            System.out.println("Leap");
+        }
+        else 
+            System.out.println("Not Leap");
+    }
+}
+
+Not Leap
+Explanation 0
+
+2001 is not a leap year
+
