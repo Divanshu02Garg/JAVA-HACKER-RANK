@@ -1,0 +1,23 @@
+Find the first N terms of the following series:
+
+0, 0, 2, 1, 4, 2, 6, 3, 8, 4, 10, 5, 12, 6, 14, 7, 16, 8 ...
+
+Input Format
+
+A single integer N.
+
+Constraints
+
+None
+
+Output Format
+
+First N terms of the given series.
+
+Sample Input 0
+
+15
+Sample Output 0
+
+0 0 2 1 4 2 6 3 8 4 10 5 12 6 14
+

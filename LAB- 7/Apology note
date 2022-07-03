@@ -1,0 +1,54 @@
+Nobita has been caught cheating in the test and has been given the punishment to write the given string "str", "N" number of times on separate lines.
+
+Given the String and the number N, help Nobita by completing his punishment.
+
+Note: If N is non positive, print "Invalid Input".
+
+Input Format
+
+A string and an integer
+
+Constraints
+
+None
+
+Output Format
+
+N strings in N different lines
+
+Sample Input 0
+
+I am sorry.
+10
+Sample Output 0
+
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+I am sorry.
+
+import java.io.*;
+import java.util.*;
+
+public class main {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner (System.in);
+        String str = scn.nextLine();
+        int n = scn.nextInt();
+        if(n>=1){
+        for(int i = 0; i<n; i++)
+          
+            System.out.println(str);
+        }
+            else
+            System.out.println("Invalid Input");
+ 
+        }  
+}

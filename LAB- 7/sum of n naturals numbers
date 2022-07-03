@@ -1,0 +1,43 @@
+"Coderman" is trapped and need your help. Evilini has locked him inside a dungeon. The password to the lock is sum of first N natural numbers. Help him escape.
+
+Note: If N is non postive, output should be "Invalid Input".
+
+Input Format
+
+A single integer 'N'
+
+Constraints
+
+None
+
+Output Format
+
+A single integer.
+
+Sample Input 0
+
+10
+Sample Output 0
+
+55
+
+import java.io.*;
+import java.util.*;
+
+public class main {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner (System.in);
+        int sum = 0;
+        int n = scn.nextInt();
+        if(n>=1){
+        for(int i = 0; i<=n; i++)
+      
+            sum = sum+i;
+            System.out.println(sum);
+        }
+            else
+            System.out.println("Invalid Input");
+ 
+        }  
+}

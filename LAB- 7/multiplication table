@@ -1,0 +1,30 @@
+Shihchan is weak in mathematics. His homework is to write multiplication tables. The format of printing can be seen from the sample test cases. Given the number N, whose table has to be printed, help him by printing the table on the screen.
+
+Input Format
+
+An integer
+
+Constraints
+
+None
+
+Output Format
+
+The multiplication table.
+
+Sample Input 0
+
+2
+Sample Output 0
+
+2 X 1 = 2
+2 X 2 = 4
+2 X 3 = 6
+2 X 4 = 8
+2 X 5 = 10
+2 X 6 = 12
+2 X 7 = 14
+2 X 8 = 16
+2 X 9 = 18
+2 X 10 = 20
+

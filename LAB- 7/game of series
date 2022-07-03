@@ -1,0 +1,22 @@
+Find the first N terms of the series:
+
+0,0,7,6,14,12,21,18,28,24......
+Input Format
+
+A single number N
+
+Constraints
+
+None
+
+Output Format
+
+N integers
+
+Sample Input 0
+
+5
+Sample Output 0
+
+0 0 7 6 14
+

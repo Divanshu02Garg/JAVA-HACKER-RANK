@@ -1,0 +1,21 @@
+Find the Nth of the following series (consider first term to be at 0th index):
+
+1,1,2,3,4,9,8,27,16,81,32......
+Input Format
+
+A single integer N
+
+Constraints
+
+None
+
+Output Format
+
+A single integer
+
+Sample Input 0
+
+9
+Sample Output 0
+
+81

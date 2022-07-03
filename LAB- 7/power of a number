@@ -1,0 +1,27 @@
+Given a number and it's power (in integer), calculate the answer using for loop.
+
+Input Format
+
+Two numbers: base (in double) and power (in integer).
+
+Constraints
+
+None
+
+Output Format
+
+A double value (upto 2 decimal places).
+
+Sample Input 0
+
+2 3
+Sample Output 0
+
+8.00
+Sample Input 1
+
+5 4
+Sample Output 1
+
+625.00
+
