@@ -22,3 +22,24 @@ Explanation 0
 
 sum of all naturals between 10 and 20 is 165
 
+import java.io.*;
+import java.util.*;
+
+public class main {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner (System.in);
+        int sum =0;
+        int a= scn.nextInt();
+        int b = scn.nextInt();
+    
+       
+
+        for(int i = a; i<=b; i++)
+            sum= sum+i;
+            System.out.println(sum);
+        
+        
+ 
+    }  
+ }

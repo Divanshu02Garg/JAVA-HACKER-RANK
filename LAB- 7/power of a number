@@ -25,3 +25,35 @@ Sample Output 1
 
 625.00
 
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+public class main{
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        int i=0;
+        double a = scn.nextDouble();
+        int b = scn.nextInt();
+        double p=1;
+ 
+        if(b>0){
+             for(i=1;i<=b;i++)
+            p=p*a;
+         System.out.format("%.2f",p);
+        }
+       
+        else if(b<0)
+        {
+             for(i=1;i<=(-b);i++)
+            p=p*a;
+        System.out.format("%.2f",1/p);   
+        }
+         else {
+        p=1;    
+         System.out.format("%.2f",p);
+        }
+        
+    }
+
+}
