@@ -1,0 +1,49 @@
+Given two integers and a character, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+There are three lines in the input:
+
+Length of rectangle (integer)
+Breadth of rectangle (integer)
+Character to be printed
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+3
+2
+$
+Sample Output 0
+
+$$$
+$$$
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner (System.in);
+        int length = scn.nextInt();
+        int breadth = scn.nextInt();
+        char ch = scn.next().charAt(0);
+        
+       
+        for(int i = 1; i <=breadth ; i++){
+            for (int j = 1; j<= length ; j++){ 
+            System.out.print(ch);
+        
+    }
+      System.out.println();
+        }
+    }
+        
+}
