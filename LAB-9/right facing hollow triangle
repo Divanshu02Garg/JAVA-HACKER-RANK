@@ -1,0 +1,54 @@
+Given an integer and a character, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+There are two lines in the input:
+
+Number of rows (integer)
+Character to be used
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+6
+^
+Sample Output 0
+
+^
+^^
+^ ^
+^  ^
+^   ^
+^^^^^^
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner scn = new Scanner (System.in);
+        int n = scn.nextInt();
+        char ch = scn.next().charAt(0);
+        
+        
+        for(int i=1; i<=n ; i++){
+            for (int j =1; j<=i; j++){
+                if(i==1|| i==n||j==i||j==1){
+                    System.out.print(ch);
+                }
+               else
+                   System.out.print(" ");
+            }
+        
+       System.out.println();
+        }
+        }
+}
