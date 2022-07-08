@@ -1,0 +1,25 @@
+Given an integer, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+A single Integer
+
+Constraints
+
+none
+
+Output Format
+
+The given pattern.
+
+Sample Input 0
+
+5
+Sample Output 0
+
+0
+1 0 
+0 1 0
+1 0 1 0
+0 1 0 1 0
+

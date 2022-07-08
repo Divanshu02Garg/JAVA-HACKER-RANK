@@ -1,0 +1,50 @@
+Given an integer, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+An integer.
+
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+5
+Sample Output 0
+
+11111
+3333
+555
+77
+9
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner scn = new Scanner (System.in);
+        int n = scn.nextInt();
+        int x = 1;
+        
+        
+        for(int i=n; i>=1 ; i--){
+            for (int j =i; j>=1; j--){
+                
+                System.out.print(x);
+                
+            }
+            
+            x=x+2;
+        
+       System.out.println();
+        }
+        }
+}
