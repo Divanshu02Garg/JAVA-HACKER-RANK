@@ -1,0 +1,141 @@
+Students in Amity college have last two periods on Monday and Thursday reserved for labs. Students have to attend the labs according to the day of the week, their department and the group they belong to. Students get confused and often go to the incorrect lab. Help them out by creating a code that takes three inputs:
+
+Day of the week given as (Monday, Thursday)
+Department given as (CSE, ECE, MECH)
+Group given as (A,B)
+Time Table for CSE:
+
+Monday Group A: Java | Group B: C++
+Thursday Group A: C++ | Group B: Java
+Time Table for ECE:
+
+Monday Group A: C | Group B: Python
+Thursday Group A: Python | Group B: C
+Time Table for MECH:
+
+Monday Group A: Central Workshop | Group B: Machine Design
+Thursday Group A: Machine Design | Group B: Central Workshop
+NOTE:
+
+For invalid day, output should be "Invalid Day".
+For invalid dept, output should be "Invalid Dept".
+For invalid group, output should be "Invalid Group".
+Input Format
+
+Three Lines of input are given:
+
+A string for day of the week.
+A string for Department
+A character for Group
+Constraints
+
+None
+
+Output Format
+
+A single string
+
+Sample Input 0
+
+Monday
+CSE
+A
+Sample Output 0
+
+Java
+
+import java.util.*;
+import java.io.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        String day  =  scn.next();
+        String dept =  scn.next();
+        char group  =  scn.next().charAt(0);
+        switch(day){
+                
+            case "Monday":
+            switch(dept){
+                case "CSE":
+                    switch(group){
+                        case 'A':
+                            System.out.print("Java");
+                            break;
+                        case 'B':
+                            System.out.print("C++");
+                                             
+                            break;
+                            default: System.out.print("Invalid Group");
+                    }
+                    break;
+                 case "ECE":
+                     switch(group){
+                        case 'A':
+                            System.out.print("C");
+                            break;
+                        case 'B':
+                            System.out.print("Python");
+                            break;
+                            default: System.out.print("Invalid Group");
+                    }
+                    break;
+                 case "MECH":
+                     switch(group){
+                        case 'A':
+                            System.out.print("Central Workshop");
+                            break;
+                        case 'B':
+                            System.out.print("Machine Design");
+                            break;
+                            default: System.out.print("Invalid Group");
+                    }
+                    break;
+                   default: System.out.print("Invalid Dept");
+            }
+                break;
+            case "Thursday":
+                switch(dept){
+                case "CSE":
+                        
+                    switch(group){
+                        case 'A':
+                            System.out.print("C++");
+                            break;
+                        case 'B':
+                            System.out.print("Java");
+                                             
+                            break;
+                            default: System.out.print("Invalid Group");
+                    }
+                    break;
+                case "ECE":
+                        switch(group){
+                        case 'A':
+                            System.out.print("Python");
+                            break;
+                        case 'B':
+                            System.out.print("C");
+                            break;
+                            default: System.out.print("Invalid Group");
+                    }
+                    break;
+                case "MECH":
+                        switch(group){
+                        case 'A':
+                            System.out.print("Machine Design");
+                            break;
+                        case 'B':
+                            System.out.print("Central Workshop");
+                            break;
+                            default: System.out.print("Invalid Group");
+                    }
+                    break;
+                  default: System.out.print("Invalid Dept");
+            }
+                break;
+                default: System.out.print("Invalid Day");
+        }
+    }
+}
+    

@@ -1,0 +1,53 @@
+Shinchan has a class test today. He has to memorise the number of days in all the calender months. He is unable to do so. Help him out by making a code that can tell the number of days in the given month assuming it's year 2023.
+
+NOTE: If the month is between 1-12, output the number of days in that month else output "INVALID INPUT". Use "switch case" to achieve your task.
+
+Input Format
+
+A single integer.
+
+Constraints
+
+None
+
+Output Format
+
+A single integer giving the number of days in the month.
+
+Sample Input 0
+
+4
+Sample Output 0
+
+30
+import java.util.*;
+import java.io.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n =  scn.nextInt();
+        switch(n){
+            case 1:           
+            case 3: 
+            case 5: 
+            case 7: 
+            case 8: 
+            case 10:
+            case 11: 
+            case 12: 
+                 System.out.print("31");
+                break;
+            case 4:
+            case 6:     
+            case 9: 
+                 System.out.print("30");
+                break;
+            case 2:
+                 System.out.print("28");
+                break;
+            default: System.out.print("INVALID INPUT");      
+                
+        }
+    }
+}

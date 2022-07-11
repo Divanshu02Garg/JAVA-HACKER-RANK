@@ -1,0 +1,61 @@
+Take an integer input from the user and display the corresponding day of the week. (Use switch case)
+
+Input Format
+
+A single integer number
+
+Constraints
+
+None
+
+Output Format
+
+Print the corresponding day of the week.
+
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+Anything Else: Invalid Day
+
+Sample Input 0
+
+2
+Sample Output 0
+
+Tuesday
+
+
+import java.util.*;
+import java.io.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n =  scn.nextInt();
+        switch(n){
+            case 1: System.out.print("Monday");
+                break;
+            case 2: System.out.print("Tuesday");
+                break;
+            case 3: System.out.print("Wednesday");
+                break;
+            case 4: System.out.print("Thursday");
+                break;
+   
+            case 5: System.out.print("Friday");
+                break;
+   
+            case 6: System.out.print("Saturday");
+                break;
+   
+            case 7: System.out.print("Sunday");
+                break;
+            default: System.out.print("Invalid Day");   
+                
+        }
+    }
+}

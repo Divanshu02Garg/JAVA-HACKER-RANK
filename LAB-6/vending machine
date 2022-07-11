@@ -1,0 +1,78 @@
+Shinchan has come to a mall with his mother. After requesting several times his mother has allowed him to get one item from the vending machine. In the vending machine, firstly the coin has to be inserted and then choice of condiment has to be made. The condiments are arranged in a tabular form (in rows and columns). Shinchan has made his choice and inserted the row number and column number. Output the name of the condiment selected by him. Use switch case to achieve the task.
+
+Vending machine is arranged as (3 rows(numbered from 1-3) and 3 columns(numbered from 1-3)):
+
+Chips | Namkeen | Chocolate
+Cold Coffee | Fanta | Pepsi
+Biscuit | Ice cream | Coca Cola
+NOTE: If the row or column input is out of range, output "Invalid Input".
+
+Input Format
+
+Two space seperated integers
+
+Constraints
+
+None
+
+Output Format
+
+A single string
+
+Sample Input 0
+
+1 1
+Sample Output 0
+
+Chips
+
+import java.util.*;
+import java.io.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int row =  scn.nextInt();
+        int col = scn.nextInt();
+        switch(row){
+                
+            case 1: 
+                switch(col){                                         
+                         case 1: System.out.print("Chips");
+                             break;
+                         case 2: System.out.print("Namkeen");
+                             break;
+                         case 3: System.out.print("Chocolate");
+                             break;
+                         default: System.out.print("Invalid Input");
+                
+                           }
+                         break;
+            case 2:
+                switch(col){
+                      case 1: System.out.print("Cold Coffee");
+                             break;
+                         case 2: System.out.print("Fanta");
+                             break;
+                         case 3: System.out.print("Pepsi");
+                             break;
+                         default: System.out.print("Invalid Input");
+                
+                           }
+                          break;
+            case 3:
+                switch(col){
+                      case 1: System.out.print("Biscuit");
+                             break;
+                         case 2: System.out.print("Ice cream");
+                             break;
+                         case 3: System.out.print("Coca Cola");
+                             break;
+                         default: System.out.print("Invalid Input");
+                
+                           }
+                         break;
+                default: System.out.print("Invalid Input");         
+        }
+    }
+}

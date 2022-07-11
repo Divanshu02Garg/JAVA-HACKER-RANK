@@ -1,0 +1,71 @@
+Nobita has a test at school today. His performance has been horrible in the past and he can not afford to fail this one. Help him out by making a code that outputs the number for the given spelling. Given the spelling, print the number in decimal format.
+
+Syllabus for the test: Number from 1-10.
+
+Note: For any input other than in the range of 1-10, output "Out of syllabus". Use "switch case" to complete this task.
+
+Input Format
+
+A single String
+
+Constraints
+
+None
+
+Output Format
+
+A single Intger
+
+Sample Input 0
+
+One
+Sample Output 0
+
+1
+import java.util.*;
+import java.io.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        String str  =  scn.next();
+        switch(str){
+            case "One":
+                System.out.println("1");
+                break;
+            case "Two":
+                 System.out.println("2");
+                break;
+            case "Three":
+                 System.out.println("3");
+                break;
+            case "Four":
+                 System.out.println("4");
+                break;
+            case "Five":
+                 System.out.println("5");
+                break;
+            case "Six":
+                 System.out.println("6");
+                break;
+            case "Seven":
+                 System.out.println("7");
+                break;
+            case "Eight":
+                 System.out.println("8");
+                break;
+            case "Nine":
+                 System.out.println("9");
+                break;
+            case "Ten":
+                 System.out.println("10");
+                break;
+                
+                
+                
+          
+            default: System.out.print("Out of syllabus");      
+                
+        }
+    }
+}
