@@ -1,0 +1,34 @@
+XYZ Technologies is in the process of incrementing the salary of its employees. This increment is done based on their salary and their performance appraisal rating.
+
+If the appraisal rating is greater than 1 and less than or equal to 3, the increment is 10% of the salary.
+If the appraisal rating is greater than 3 and less than or equal to 4, the increment is 25% of the salary.
+If the appraisal rating is greater than 4 and less than or equal to 5, the increment is 30% of the salary.
+Help them to do this by writing a program that displays the final salary (Upto 2 decimal places).
+
+Note: If either the salary is 0 or negative (or) if the appraisal rating is not in the range 1 (excluding) to 5 (inclusive), then the output should be “Invalid Input”.
+
+Input Format
+
+There are two lines in the input.
+
+First line contains a double value (original salary).
+Second line contains a double value (appraisal rating)
+Constraints
+
+None
+
+Output Format
+
+A double value representing the final salary or a string.
+
+Sample Input 0
+
+8000
+3
+Sample Output 0
+
+8800.00
+Explanation 0
+
+8000 + 10% of 8000 = 8800.00
+

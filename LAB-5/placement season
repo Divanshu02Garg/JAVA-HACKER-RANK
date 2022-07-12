@@ -1,0 +1,26 @@
+Amity college wants to recognize the department which has succeeded in getting the maximum number of students placed for this academic year. The departments that have participated in the recruitment drive are CSE, ECE and MECH. Given the number of students who got placed in CSE, ECE and MECH department, help the college find the department which got the maximum number of placements.
+
+Note : If any input is negative, the output should be “Input is Invalid”. If all department have equal number of placements, the output should be “None of the department has got the highest placements”.
+
+Input Format
+
+Three integers:
+
+Number of students placed from CSE
+Number of students placed from ECE
+Number of students placed from MECH
+Constraints
+
+None
+
+Output Format
+
+A single string
+
+Sample Input 0
+
+30 40 50
+Sample Output 0
+
+Maximum students placed from MECH department
+

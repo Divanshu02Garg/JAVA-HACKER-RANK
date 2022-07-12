@@ -1,0 +1,46 @@
+N monkeys are sitting on the branches of a huge tree. As travelers offer bananas and peanuts, the monkeys jump down the tree. Every monkey can eat b bananas or p peanuts. If total i number of bananas and j number of peanuts are offered by travelers, calculate the number of monkeys left hungry.
+
+At a time, one monkey gets down and finishes eating and goes to the other side of the road.
+
+A monkey can either eat b bananas or p peanuts. If less than b bananas and less than p peanuts are left on the ground, the monkey who eats last will eat them all.
+
+Write code to take inputs N, b, p, i, j and return the number of monkeys left hungry.
+
+where,
+
+N = Total no of monkeys
+b = Number of bananas eaten by a single monkey (Monkey that jumped down last may get less than b bananas)
+p = Number of peanuts eaten by a single monkey(Monkey that jumped down last may get less than p peanuts)
+i = Total number of bananas
+j = Total number of peanuts
+All inputs must be positive. If any of the input (N, b, p, i, j) is not positive, display "INVALID INPUT"
+
+Input Format
+
+Five integers N, b, p, i, j are given in a single line.
+
+Constraints
+
+None
+
+Output Format
+
+A single integer representing number of monkeys left hungry.
+
+Sample Input 0
+
+20 2 3 12 12
+Sample Output 0
+
+10
+Explanation 0
+
+Total monkeys = 20
+Every monkey eats 2 bananas or 3 peanuts.
+Bananas = 12, Peanuts = 12.
+Monkeys eating bananas = 6 (0 bananas left)
+Monkeys eating peanuts = 4 (0 peanuts left)
+Monkeys who ate = 10
+Hungry monkeys = 20 - 10 = 10
+
+

@@ -1,0 +1,44 @@
+In a theater, there is a discount scheme announced where one gets a 10% discount on the total cost of tickets when there is a bulk booking of more than 20 tickets, and a discount of 2% on the total cost of tickets if a special coupon card is submitted. Develop a program to find the total cost as per the scheme. The cost of one k class ticket is ₹75 and one q class is ₹150. Refreshments can also be opted for by paying an additional of ₹50 per member.
+
+Hint: A minimum of 5 and a maximum of 40 tickets have to be booked at a time else display “Minimum of 5 and Maximum of 40 tickets have to be booked”. If class other than 'k' or 'q' is given, output should be “Invalid Input”.
+
+The ticket cost should be printed upto two decimal places.
+
+Input Format
+
+Four lines will be given as input:
+
+Line 1: An integer of number of tickets
+Line 2: A single character (y/n) for refreshments
+Line 3: A single character (y/n) for coupon code
+Line 4: A single character (k/q) for class
+Constraints
+
+None
+
+Output Format
+
+A single number(double).
+
+Sample Input 0
+
+35 
+y 
+n 
+q
+Sample Output 0
+
+6475.00
+Explanation 0
+
+Price calculation:
+
+Number of tickets = 35
+Refreshments = 'y'
+Coupon code = 'n'
+Class = 'q'
+Total Cost of 35 tickets of q class = (35 * 150) = 5250
+Bulk Discount = 10% of 5250 = 525
+Refreshment Cost = 50*35 = 1750
+Total Cost = 5250 - 525 + 1750 = 6475.00
+

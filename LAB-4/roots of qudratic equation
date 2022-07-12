@@ -30,3 +30,29 @@ Sample Input 1
 Sample Output 1
 
 Imaginary Roots
+
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        double d=(b*b)-4*a*c;
+        double root1=0,root2=0;
+        double sqrt=Math.sqrt(d);
+        if(d>0){
+            root1= (-b+sqrt)/(2*a);
+            root2= (-b-sqrt)/(2*a);
+              if(root1>root2)
+                System.out.format("%.1f %.1f",root2,root1);
+              else
+                System.out.format("%.1f %.1f",root1,root2);}
+        else if(d==0)
+        {root1=-b/(2*a);
+        System.out.format("%.1f",root1);}
+        else{
+            System.out.println("Imaginary Roots");}
+    }
+}
