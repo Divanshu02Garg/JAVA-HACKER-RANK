@@ -20,3 +20,23 @@ Sample Output 0
 
 0 0 7 6 14
 
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+   public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        for(int i=0;i<a/2;i++)
+        {
+            System.out.print(i*7+" ");
+            System.out.print(i*6+" ");
+        }
+        if(a%2!=0)
+        {
+            int x=a/2;
+            System.out.print(x*7);
+        }
+    }
+}
