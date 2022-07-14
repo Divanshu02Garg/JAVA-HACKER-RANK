@@ -1,0 +1,65 @@
+Given an integer and a character, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+An integer and a character
+
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+5
+*
+Sample Output 0
+
+    *
+   **
+  ***
+ ****
+*****
+Sample Input 1
+
+8
+(
+Sample Output 1
+
+       (
+      ((
+     (((
+    ((((
+   (((((
+  ((((((
+ (((((((
+((((((((
+
+
+import java.io.*;
+import java.util.*;
+
+public class main {
+
+    public static void main(String[] args) {
+        
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        char ch = scn.next().charAt(0);
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=i;j<n;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+}

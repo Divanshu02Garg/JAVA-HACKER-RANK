@@ -1,0 +1,89 @@
+Given an integer, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+A single integer.
+
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+5
+Sample Output 0
+
+  A
+ AB
+ABC
+ AB
+  A
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double b=(double)n/2;
+        double c=Math.round(b);
+        int d=(int)c;
+        for(int i=1;i<=d;i++)
+        {
+            char ch='A';
+            for(int j=i;j<d;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+        if((n-d)%2==0)
+        {
+            for(int i=d+1;i<=n;i++)
+            {
+                char ch='A';
+                for(int j=d+1;j<=n;j++)
+                {
+                    if(j<=i)
+                      System.out.print(" ");
+                }
+                for(int k=n;k>=i;k--)
+                {
+                    System.out.print(ch);
+                    ch++;
+                }
+                System.out.println();
+            }
+        }
+        else
+        {
+            for(int i=d+1;i<=n;i++)
+            {
+                char ch='A';
+                for(int j=d+1;j<=n;j++)
+                {
+                    if(j<i)
+                      System.out.print(" ");
+                }
+                for(int k=n;k>=i;k--)
+                {
+                    System.out.print(ch);
+                    ch++;
+                }
+                System.out.println();
+            }
+        }  
+    }
+}

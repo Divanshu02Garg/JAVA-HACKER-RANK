@@ -1,0 +1,106 @@
+Given an integer, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+A single integer.
+
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+6
+Sample Output 0
+
+ABC
+ DE
+  F
+  G
+ HI
+JKL
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double a=(double)n/2;
+        double b=Math.round(a);
+        int c=(int)b;
+        char ch='A';
+        if(n%2==0)
+        {
+        for(int i=1;i<=c;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                if(j<i)
+                    System.out.print(" ");
+            }
+            for(int k=c;k>=i;k--)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+        for(int i=c+1;i<=n;i++)
+        { 
+            for(int j=n;j>i;j--)
+            {
+                    System.out.print(" ");
+            }
+            for(int k=c+1;k<=i;k++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+        }
+        else
+        {
+            for(int i=1;i<=c;i++)
+            {
+            for(int j=1;j<=i;j++)
+            {
+                if(j<i)
+                    System.out.print(" ");
+            }
+            for(int k=c;k>=i;k--)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+            }
+            for(int i=c+1;i<=n;i++)
+            { 
+            for(int j=n;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=c+1;k<=i+1;k++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+            
+        }
+            
+            
+        }
+        
+    }
+}

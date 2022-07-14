@@ -1,0 +1,59 @@
+Given an integer, print the pattern as indicated in the sample testcases.
+
+Input Format
+
+A single integer
+
+Constraints
+
+None
+
+Output Format
+
+The given pattern
+
+Sample Input 0
+
+3
+Sample Output 0
+
+  1
+ 13
+135
+Sample Input 1
+
+5
+Sample Output 1
+
+    1
+   13
+  135
+ 1357
+13579
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        for(int i=1;i<=n;i++)
+        {
+            int c=1;
+            for(int j=i;j<n;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print(c);
+                c+=2;
+            }
+            System.out.println();
+        }
+    }
+}
