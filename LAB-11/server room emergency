@@ -1,0 +1,52 @@
+// Evilini has got his hands on some very sensitive information. If this information is misused, it can cause mass destruction. Coderman has managed to break into Evilini's server room and hack into the server. To decode the files, Coderman needs a prime number. He looks around and a find a number written on a slip. Help him identify if it is a prime number or not.
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// If the number is prime, print "Prime" else print "Not Prime".
+
+// Sample Input 0
+
+// 2
+// Sample Output 0
+
+// Prime
+// Sample Input 1
+
+// 8
+// Sample Output 1
+
+// Not Prime
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner scn = new Scanner(System.in);
+     int n = scn.nextInt();
+        int temp = 0;
+        for(int i=2; i<=n-1; i++)
+      {
+         if(n%i == 0)
+         {
+            temp = temp +1;
+            
+         }
+      }
+      
+      if(temp>0)
+         System.out.println("Not Prime");
+      else
+         System.out.println("Prime");
+    }
+}

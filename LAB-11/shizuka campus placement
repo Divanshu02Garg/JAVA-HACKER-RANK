@@ -1,0 +1,23 @@
+<!-- Shizuka has taken part in the Campus Placement drive taking place in her college. She has been studying all week for it. She has almost completed the syllabus and is left with just one problem. She needs to find Prime numbers within the given range in the last remaining problem. Help her out by finding it's solution.
+
+NOTE: If the range does not exist, print "Invalid Input".
+
+Input Format
+
+Two integers, a and b (Start and end of the range)
+
+Constraints
+
+None
+
+Output Format
+
+All the prime numbers in the given range [a,b] separated by spaces.
+
+Sample Input 0
+
+1 10
+Sample Output 0
+
+2 3 5 7 -->
+

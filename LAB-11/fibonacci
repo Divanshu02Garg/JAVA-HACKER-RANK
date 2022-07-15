@@ -1,0 +1,28 @@
+This series can be broken down as the following series: Fib0 = 0 Fib1 = 1 Fibn = Fibn-1 + Fibn-2 , n > 1
+
+First few elements of Fibonacci series are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377...
+
+You are given a list of non-negative integers. For each integer n, in the list print nth fibonacci number
+
+NOTE: If the given number is negative, print "Invalid Input".
+
+Input Format
+
+A single number n
+
+Constraints
+
+None
+
+Output Format
+
+Print the first n numbers in the fibonacci series seperated by spaces.
+
+Sample Input 0
+
+2
+Sample Output 0
+
+0 1
+
+
