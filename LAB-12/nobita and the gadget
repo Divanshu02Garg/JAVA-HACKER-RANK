@@ -1,0 +1,42 @@
+  <!-- Nobita has done it again! Nobita was playing with one of Doraemon's gadgets and has mistakely introduced a bug into it. All the numbers are being printed in reverse. Help him out by reversing the output number on the machine so that it once again shows the correct output. Doraemon will be back any time, be quick!
+
+Input Format
+
+A single integer
+
+Constraints
+
+None
+
+Output Format
+
+A single integer
+
+Sample Input 0
+
+123
+Sample Output 0
+
+321   -->
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+         int i =1;
+        int digit;
+        int x = 0;
+        while(n>0){
+           digit =  n %10;
+            n = n/10;
+          x = (x*10)+digit;
+        }    System.out.print(x);
+        
+    
+    }
+}

@@ -1,0 +1,67 @@
+// Chaman has to choose a four digit lucky number for his car. His lucky numbers are 3,5 and 7. Help him find a car number, sum of whose digits is divisible by 3, 5 or 7. Given the car number, output "Lucky" if it is lucky else print "Unlucky".
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single string
+
+// Sample Input 0
+
+// 1234
+// Sample Output 0
+
+// Lucky
+
+// Chaman has to choose a four digit lucky number for his car. His lucky numbers are 3,5 and 7. Help him find a car number, sum of whose digits is divisible by 3, 5 or 7. Given the car number, output "Lucky" if it is lucky else print "Unlucky".
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single string
+
+// Sample Input 0
+
+// 1234
+// Sample Output 0
+
+// Lucky
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner (System.in);
+        int n =  scn.nextInt();
+        int i=1;
+        
+        int sum = 0;
+       while(n>0){
+         i =  n%10;
+         sum = sum+i;
+          n=  n/10;
+       }  
+        if(sum %3==0 || sum%5==0|| sum%7==0){
+            System.out.println("Lucky");
+        }
+        else
+           System.out.println("Unlucky"); 
+     
+}        
+}

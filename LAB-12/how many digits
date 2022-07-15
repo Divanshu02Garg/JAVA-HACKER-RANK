@@ -1,0 +1,42 @@
+// Nobita was given the responsibility to collect marks of all the students for a class test. The marks were out of 9 (a student can score between 1 and 9 marks). Nobita wrote down all the marks consecutively, without spaces. He now needs to tell, how many students gave the exam. Help him out by making a code that takes the number (formed by writing all the marks without spaces) a input and gives number of students as output.
+
+// Input Format
+
+// A single integer.
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single integer (number of students).
+
+// Sample Input 0
+
+// 56782318
+// Sample Output 0
+
+// 8
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner (System.in);
+        int n =  scn.nextInt();
+        int i=1;
+        
+        int count = 0;
+       while(n>0){
+         i =  n%10;
+         
+          n=  n/10;
+           count++;
+       }  
+     System.out.println(count);
+}        
+}

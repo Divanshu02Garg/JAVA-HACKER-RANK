@@ -1,0 +1,42 @@
+//  Coderman needs your help in defusing a bomb. The hint given to defuse the bomb is a number. The sum of all the digits of this number is the secret code to defuse the bomb. Can you help him!
+
+// Input Format
+
+// A single number n
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single number representing the secret code to defuse the bomb
+
+// Sample Input 0
+
+// 2143
+// Sample Output 0
+
+// 10 
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner (System.in);
+        int n =  scn.nextInt();
+        int sum = 0;
+        int digit;
+        while(n>0){
+            digit = n%10;
+            sum = sum+digit;
+            n = n/10;
+        }
+        System.out.println(sum);
+        }
+        }
+
+

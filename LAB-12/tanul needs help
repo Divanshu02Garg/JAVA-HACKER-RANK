@@ -1,0 +1,51 @@
+// Gautam and Tanul plays by telling numbers. Gautam says a number to Tanul. Tanul should first reverse the number and check if it is same as the original. If yes, Tanul should say “Palindrome”. If not, he should say “Not a Palindrome”. If the number is negative, print “Invalid Input”. Help Tanul by writing a program.
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A singe string
+
+// Sample Input 0
+
+// 12121
+// Sample Output 0
+
+// Palindrome
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        if(n<0){
+            System.out.println("Invalid Input");
+            return;
+        }
+         int i =1;
+        int digit;
+        int x = 0;
+        int ans = n;
+        while(n>0){
+           digit =  n %10;
+            n = n/10;
+         x = (x*10)+digit;
+        }
+        if(x==ans)
+        System.out.println("Palindrome");
+        else if (x!=ans)
+        System.out.println("Not a Palindrome");
+    
+    }
+}
+
