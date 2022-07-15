@@ -1,4 +1,4 @@
-Kazama went to the market to buy N apples. He found two shops, shop A and B, where apples were being sold in lots. He can buy any number of the complete lot(s) but not loose apples. He is confused with the price and wants you to figure out the minimum cost to buy exactly N apples. Write an algorithm for Kazama to calculate the minimum cost to buy exactly N apples.
+ <!-- Kazama went to the market to buy N apples. He found two shops, shop A and B, where apples were being sold in lots. He can buy any number of the complete lot(s) but not loose apples. He is confused with the price and wants you to figure out the minimum cost to buy exactly N apples. Write an algorithm for Kazama to calculate the minimum cost to buy exactly N apples.
 
 If there is no way to buy exactly N apples, print "Invalid Input".
 
@@ -16,11 +16,44 @@ Output Format
 Print a positive integer representing the minimum price at which Kazama can buy the apples.
 
 Sample Input 0
-5t
+
 19
 3 10
 4 15
 Sample Output 0
 
 65
+Explanation 0
+
+Option 1: Kazama can buy 5 lots from shop A (3*5 = 15 Apples) and 1 lot from shop 2 (4*1 = 4 Apples). This will cost him: (5*10) + (1*15) = ₹65
+Option 2: Kazama can buy 1 lot from shop A (3*1 = 5 Apples) and 4 lots from shop 2 (4*4 = 16 Apples). This will cost him: (1*10) + (4*15) = ₹70
+Option 1 is cheaper. 
+ -->
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int m1 = scn.nextInt();
+        int p1 = scn.nextInt();
+        int m2 = scn.nextInt();
+        int p2 = scn.nextInt();
+          int min_cost = -1;
+        for (int i=0; m1*i <= n; i++) {
+            int count2 = n - i*m1;
+            if (count2%m2 == 0) {
+                int cost = p1 * i + p2 * (count2/m2);
+                min_cost = (cost < min_cost || min_cost == -1) ? cost : min_cost;
+            }
+        }
+        if (min_cost != -1)
+            System.out.println(min_cost);
+        else
+            System.out.println("Invalid Input");
+    }
+}
 

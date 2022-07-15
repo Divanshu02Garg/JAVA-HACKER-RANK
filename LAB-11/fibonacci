@@ -1,28 +1,91 @@
-This series can be broken down as the following series: Fib0 = 0 Fib1 = 1 Fibn = Fibn-1 + Fibn-2 , n > 1
+// This series can be broken down as the following series: Fib0 = 0 Fib1 = 1 Fibn = Fibn-1 + Fibn-2 , n > 1
 
-First few elements of Fibonacci series are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377...
+// First few elements of Fibonacci series are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377...
 
-You are given a list of non-negative integers. For each integer n, in the list print nth fibonacci number
+// You are given a list of non-negative integers. For each integer n, in the list print nth fibonacci number
 
-NOTE: If the given number is negative, print "Invalid Input".
+// NOTE: If the given number is negative, print "Invalid Input".
 
-Input Format
+// Input Format
 
-A single number n
+// A single number n
 
-Constraints
+// Constraints
 
-None
+// None
 
-Output Format
+// Output Format
 
-Print the first n numbers in the fibonacci series seperated by spaces.
+// Print the first n numbers in the fibonacci series seperated by spaces.
 
-Sample Input 0
+// Sample Input 0
 
-2
-Sample Output 0
+// 2
+// Sample Output 0
 
-0 1
+// 0 1
 
 
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            int a=0;
+            int b=1;
+            int c=0;
+            if(n==1)
+                System.out.print("0");
+            else
+                System.out.print(a+" "+b+" ");
+            for(int i=1;i<=n-2;i++)
+            {
+                c=a+b;
+                a=b;
+                b=c;
+                System.out.print(c+" ");
+            }
+        }
+    }
+}
+
+
+
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+            if(n<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        int first = 0; 
+        int second = 1;
+        int i =1;
+        while(i<=n){
+            int third = first+second;
+            System.out.print(first);
+            first = second;
+            second = third;
+            i++;
+        }
+    }
+}
