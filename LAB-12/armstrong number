@@ -1,0 +1,88 @@
+// Nobita has for the first time started to like maths. He is fascinated by Armstrong numbers. He is trying to find out whether the given number is "Armstrong" or not.
+
+// Armstrong number is any number following the given rule –
+
+// image
+
+// Where n is the order(length/digits in number)
+// NOTE: If the given number is Armstrong, print "Armstrong" else print "Not Armstrong". In case the given number is negative, print "Invalid Input".
+
+// Input Format
+
+// A singe integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// a single string
+
+// Sample Input 0
+
+// 371
+// Sample Output 0
+
+// Armstrong
+// Explanation 0
+
+// 371 = 3^3 + 7^3 + 1^3
+// Therefore it's an Armstrong number.
+// Sample Input 1
+
+// 152
+// Sample Output 1
+
+// Not Armstrong
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int c=n;
+        double i=0.0;
+        int a=0;
+        double sum=0.0;
+        int y=0;
+        int x=0;
+        for(int z=n;z>0;z=z/10)
+        {
+            x=z%10;
+            
+            y++;
+        }
+        if(n<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else if(n==0)
+        {
+            System.out.println("Armstrong");
+        }
+        else
+        {
+        while(n>0)
+        {
+            a=n%10;
+            i=Math.pow(a,y);
+
+            sum=sum+i;
+            n=n/10;
+        }
+        if(c==sum)
+        {
+            System.out.println("Armstrong");
+        }
+        else{
+            System.out.println("Not Armstrong");
+        }
+        }
+    }
+}

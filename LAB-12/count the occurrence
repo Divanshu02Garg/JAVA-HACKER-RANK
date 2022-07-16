@@ -1,0 +1,95 @@
+// Given two integers 'a' and 'b'. Find the number of occurrences of 'a' in 'b'.
+
+// Note: assume 'a' to be a single digit number.
+
+// Input Format
+
+// Two space separated integers
+
+// Constraints
+
+// a>=0
+// b>=0
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 2 2324252
+// Sample Output 0
+
+// 4
+// Sample Input 1
+
+// 1 8765
+// Sample Output 1
+
+// 0
+
+
+
+// import java.io.*;
+// import java.util.*;
+
+// public class Solution {
+
+//     public static void main(String[] args) {
+        
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         int c=0;
+//         if(a==0 && b==0)
+//         {
+//             System.out.println("1");
+//         }
+//         else{
+//         for(int i=b;i>0;i=i/10)
+//         {
+//             int r=i%10;
+//             if(r==a)
+//             {
+//                 c++;
+//             }
+//         }
+//         System.out.println(c);
+//         }
+//     }
+// }
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=0;
+        int count = 0;
+        if(a==0 && b==0)
+        {
+            System.out.println("1");
+        }
+        else{
+        for(int i=b;i>0;)
+        {
+            int x=i%10;
+            if(x==a)
+            {
+                count++;
+            }
+            i= i/10;
+        }
+        System.out.println(count);
+        }
+    }
+}
+
+
+
+

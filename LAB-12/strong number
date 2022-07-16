@@ -1,0 +1,64 @@
+// Your task is to check whether a number is a Strong number or not. Given an integer as input check whether it is a Strong number or not. Conditions for a strong number:
+
+// Sum of factorial of each digit is equal to the number.
+// NOTE: If the number is a strong number, print "Strong Number" else print "Not a Strong Number". In case of negative numbers print "Invalid Input".
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single string
+
+// Sample Input 0
+
+// 145
+// Sample Output 0
+
+// Strong Number
+// Explanation 0
+
+// 1! + 4! + 5! = 145
+// It is a Strong Number
+
+import java.util.*;
+import java.io.*;
+public class Main{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int fact;
+int lastdigit;
+int sum = 0;
+int x = n;
+    if(n<0){
+    System.out.println("Invalid Input");
+        return;
+}
+    else if (n>0){
+while(n != 0)
+{
+int i = 1;
+    fact = 1;
+lastdigit = n % 10;
+while(i <= lastdigit)
+{
+fact = fact * i;
+i++;
+}
+sum = sum + fact;
+n = n / 10;
+}
+if(sum == x)
+System.out.println("Strong Number");
+else if (sum != x)
+System.out.println("Not a Strong Number");
+    }
+
+}
+}
