@@ -1,28 +1,55 @@
-Write a function which takes an integer parameter. The function displays "Even" if the argument passed is even and "Odd" if the argument passed is odd. If the argument is not positive, it should display "Invalid". The function doesn't return anything.
+// Write a function which takes an integer parameter. The function displays "Even" if the argument passed is even and "Odd" if the argument passed is odd. If the argument is not positive, it should display "Invalid". The function doesn't return anything.
 
-Input Format
+// Input Format
 
-A single integer
+// A single integer
 
-Constraints
+// Constraints
 
-None
+// None
 
-Output Format
+// Output Format
 
-A string
+// A string
 
-Sample Input 0
+// Sample Input 0
 
-23
-Sample Output 0
+// 23
+// Sample Output 0
 
-Odd
-Sample Input 1
+// Odd
+// Sample Input 1
 
-16
-Sample Output 1
+// 16
+// Sample Output 1
 
-Even
+// Even
 
 
+import java.util.*;
+
+public class Solution {
+      
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      System.out.println(evenOdd(a));
+    }
+    static String evenOdd(int a)
+    {
+        String st="";
+        if(a<=0)
+        {
+            st="Invalid";
+        }
+        else if(a%2==0)
+        {
+           st="Even"; 
+        }
+        else
+        {
+            st="Odd";
+        }
+        return st;
+    }
+}

@@ -1,22 +1,39 @@
-Write a function which takes two string as parameters and displays the concatenated string. The function doesn't return anything.
+// Write a function which takes two string as parameters and displays the concatenated string. The function doesn't return anything.
 
-Input Format
+// Input Format
 
-Two strings
+// Two strings
 
-Constraints
+// Constraints
 
-None
+// None
 
-Output Format
+// Output Format
 
-A string
+// A string
 
-Sample Input 0
+// Sample Input 0
 
-Hello World
-Sample Output 0
+// Hello World
+// Sample Output 0
 
-HelloWorld
+// HelloWorld
 
 
+import java.util.*;
+
+public class Solution {
+  	
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in); 
+      String s1,s2;
+      s1= sc.next();
+      s2 = sc.next();
+      System.out.println(concatenate(s1,s2));
+    }
+    static String concatenate(String s1,String s2)
+    {
+        String st= s1+s2;
+        return st;
+    }
+}
