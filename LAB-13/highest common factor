@@ -1,0 +1,69 @@
+// Given two numbers, find the highest common factor(HCF). HCF or Highest Common Factor is the greatest number which divides each of the two or more numbers.
+
+// NOTE: If either of the two number is negative, print "Invalid Input".
+
+// Input Format
+
+// Two space seperated integers.
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 8 12
+// Sample Output 0
+
+// 4
+// Sample Input 1
+
+// 14 21
+// Sample Output 1
+
+// 7
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=0;
+        if(a<0 || b<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            for(int i=a;i>0;i--)
+            {
+                if(a%i==0)
+                {
+                    for(int j=b;j>0;j--)
+                    {
+                        if(b%j==0)
+                        {
+                            if(i==j)
+                            {
+                                sum=i;
+                                break;
+                            }
+                        }
+                    }
+                    if(sum!=0)
+                        break;
+                }
+            }
+            System.out.println(sum);
+        }
+    }

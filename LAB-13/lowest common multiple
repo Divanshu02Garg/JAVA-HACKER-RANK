@@ -1,0 +1,52 @@
+// Given two numbers, find the lowest common multiple of the two.
+
+// Input Format
+
+// Two space separated integers
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 2 5
+// Sample Output 0
+
+// 10
+// Sample Input 1
+
+// 7 14
+// Sample Output 1
+
+// 14
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn =new Scanner(System.in);
+         int a = scn.nextInt();
+         int b = scn.nextInt();
+         int sum;
+        int r=Math.max(a,b);
+        for(int i=r;i>0;i++)
+        {
+            if(i%a==0 && i%b==0)
+            {
+                System.out.println(i);
+                break;
+            }
+        }
+    }
+}
+       
+
+

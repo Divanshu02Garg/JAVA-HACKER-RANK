@@ -1,0 +1,74 @@
+// A number is a perfect number if is equal to sum of its proper divisors, that is, sum of its positive divisors excluding the number itself. Write a function to check if a given number is perfect or not. In case the number is a perfect number, print "Perfect Number" else print "Not a Perfect Number".
+
+// NOTE: If the given number is negative, print "Invalid Input".
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single string
+
+// Sample Input 0
+
+// 6
+// Sample Output 0
+
+// Perfect Number
+// Explanation 0
+
+// Perfect divisors of 6: 1, 2, 3. 1+2+3 = 6, thus 6 is a Perfect Number.
+
+// Sample Input 1
+
+// 4
+// Sample Output 1
+
+// Not a Perfect Number
+// Explanation 1
+
+// Perfect divisors of 4: 1,2. 1+2 != 4, thus 4 is not a Perfect Number.
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn =new Scanner(System.in);
+         int n = scn.nextInt();
+         int sum = 0;
+               
+             if(n<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            for(int i=1;i<n;i++)
+            {
+                if(n%i==0)
+                {
+                    sum=sum+i;
+                }
+            }
+            if(sum==n)
+            {
+                System.out.println("Perfect Number");
+            }
+            else
+            {
+                System.out.println("Not a Perfect Number");
+            }
+        }
+    }
+}
+
+

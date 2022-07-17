@@ -1,0 +1,30 @@
+Given an integer input, check whether the given number is an automorphic number or not. For a number to be Automorphic, it’s square has to end with the number itself. If a number is automorphic, print "Yes" otherwise print "No".
+
+Input Format
+
+A single integer
+
+Constraints
+
+None
+
+Output Format
+
+A single string
+
+Sample Input 0
+
+5
+Sample Output 0
+
+Yes
+Explanation 0
+
+Square of 5 is 25. 25 ends with 5. So, it is automorphic.
+
+Sample Input 1
+
+6
+Sample Output 1
+
+Yes

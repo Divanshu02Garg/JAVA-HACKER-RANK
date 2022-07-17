@@ -1,0 +1,47 @@
+// Given three numbers, find the greatest common divisor of the three.
+
+// Input Format
+
+// Three space separated integers
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 8 4 12
+// Sample Output 0
+
+// 4
+// Sample Input 1
+
+// 27 54 18
+// Sample Output 1
+
+// 9
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scn =new Scanner(System.in);
+         int a = scn.nextInt();
+         int b = scn.nextInt();
+         int c = scn.nextInt();
+         int d = a;
+        for(int i = d; i>0;i--){
+            if(a%i==0 && b%i==0 && c%i==0){
+                System.out.println(i);
+                break;
+            }
+        }
+    }
+}

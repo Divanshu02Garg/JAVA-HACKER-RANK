@@ -1,0 +1,61 @@
+// Given an integer input, check if the number is Harshad number. A Harshad number is a number which is completely divisible by sum of its digits. If a number is Harshad, print "Yes" otherwise print "No".
+
+// Input Format
+
+// A single integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single string
+
+// Sample Input 0
+
+// 24
+// Sample Output 0
+
+// Yes
+// Explanation 0
+
+// Sum of digits = 2+4 = 6
+// 24 is divisible by 6
+// Sample Input 1
+
+// 22
+// Sample Output 1
+
+// No
+// Explanation 1
+
+// Sum of digits = 2+2 = 4 22 is not divisible by 4.
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        int count =0;
+        for(int i=n;i>0;)
+        {
+            int r=i%10;
+            count=count+r;
+            i=i/10;
+        }
+        if(n%count==0)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}
