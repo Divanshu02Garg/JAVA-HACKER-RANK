@@ -1,0 +1,40 @@
+# Overload the function Foo():
+
+# When the first parameter is an integer and second parameter is a float, return sum of the two numbers.
+# When the first parameter is a float and second parameter is an integer, return difference (parameter1 - parameter2) of the two numbers.
+# Input Format
+
+# Input is already handled in the code stub.
+
+# Constraints
+
+# None
+
+# Output Format
+
+# Output is already handled in the code stub.
+
+
+import java.util.*;
+
+public class Solution {
+	
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        float b = sc.nextFloat();
+        float c = Foo(a,b);
+        float d = Foo(b,a);
+      	System.out.print(c+" "+d);
+    }
+    static float Foo(int a,float b)
+    {
+        float s=a+b;
+        return s;
+    }
+    static float Foo(float c,int d)
+    {
+        float s=c-d;
+        return s;
+    }
+}

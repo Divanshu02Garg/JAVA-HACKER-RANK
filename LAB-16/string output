@@ -1,0 +1,37 @@
+// Write a function which takes a string as input from the user and displays it. The function takes no arguments and doesn't return anything.
+
+// Input Format
+
+// A string
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A string
+
+// Sample Input 0
+
+// Good Morning
+// Sample Output 0
+
+// Good Morning
+
+
+import java.util.*;
+
+public class Solution {
+  
+  public static void main(String args[] ){
+      Scanner sc=new Scanner(System.in);
+      String st=sc.nextLine();
+      System.out.println(func(st));
+    
+    }
+    static String func(String s)
+    {
+        return s;
+    }
+}

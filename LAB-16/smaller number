@@ -1,0 +1,40 @@
+// Write a function which takes two numbers (in double) as input from the user and returns the smaller of the two. The function takes no arguments.
+
+// Input Format
+
+// Two numbers (in double)
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A number
+
+// Sample Input 0
+
+// 4 9
+// Sample Output 0
+
+// 4.0
+
+
+
+
+import java.util.*;
+public class Solution {
+	
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double a=sc.nextDouble();
+        double b=sc.nextDouble();
+      double x = smaller(a,b);
+      System.out.print(x);
+    }
+    static double smaller(double a, double b)
+    {
+        double c=Math.min(a,b);
+        return c;
+    }
+}

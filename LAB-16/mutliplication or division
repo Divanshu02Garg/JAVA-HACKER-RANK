@@ -1,0 +1,41 @@
+// Overload the function Foo().
+
+// In case the two prameters passed are of data type double, return the quotient when parameter 1 is divided by parameter 2.
+// In case the two prameters passed are of data type integer, return the value when parameter 1 is mutiplied by parameter 2.
+// Input Format
+
+// Input is already handled in the code stub.
+
+// Constraints
+
+// None
+
+// Output Format
+
+
+import java.util.*;
+
+public class Solution {
+	/* Enter your code here */
+  
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        double e = Foo(a,b);
+        int f = Foo(c,d);
+        System.out.println(e+" "+f);
+    }
+    static double Foo(double a,double b)
+    {
+        double s=a/b;
+        return s;
+    }
+    static int Foo(int c,int d)
+    {
+        int s=c*d;
+        return s;
+    }
+}

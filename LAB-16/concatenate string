@@ -1,0 +1,22 @@
+Write a function which takes two string as parameters and displays the concatenated string. The function doesn't return anything.
+
+Input Format
+
+Two strings
+
+Constraints
+
+None
+
+Output Format
+
+A string
+
+Sample Input 0
+
+Hello World
+Sample Output 0
+
+HelloWorld
+
+

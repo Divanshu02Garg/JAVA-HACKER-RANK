@@ -1,0 +1,28 @@
+Write a function which takes an integer parameter. The function displays "Even" if the argument passed is even and "Odd" if the argument passed is odd. If the argument is not positive, it should display "Invalid". The function doesn't return anything.
+
+Input Format
+
+A single integer
+
+Constraints
+
+None
+
+Output Format
+
+A string
+
+Sample Input 0
+
+23
+Sample Output 0
+
+Odd
+Sample Input 1
+
+16
+Sample Output 1
+
+Even
+
+
