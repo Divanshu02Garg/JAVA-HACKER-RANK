@@ -1,30 +1,89 @@
-Given an integer input, check whether the given number is an automorphic number or not. For a number to be Automorphic, it’s square has to end with the number itself. If a number is automorphic, print "Yes" otherwise print "No".
+// Given an integer input, check whether the given number is an automorphic number or not. For a number to be Automorphic, it’s square has to end with the number itself. If a number is automorphic, print "Yes" otherwise print "No".
 
-Input Format
+// Input Format
 
-A single integer
+// A single integer
 
-Constraints
+// Constraints
 
-None
+// None
 
-Output Format
+// Output Format
 
-A single string
+// A single string
 
-Sample Input 0
+// Sample Input 0
 
-5
-Sample Output 0
+// 5
+// Sample Output 0
 
-Yes
-Explanation 0
+// Yes
+// Explanation 0
 
-Square of 5 is 25. 25 ends with 5. So, it is automorphic.
+// Square of 5 is 25. 25 ends with 5. So, it is automorphic.
 
-Sample Input 1
+// Sample Input 1
 
-6
-Sample Output 1
+// 6
+// Sample Output 1
 
-Yes
+// Yes
+
+
+
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+      
+        Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        int c=0;
+        
+        for(int i =n;i>0;i=i/10){
+             int a = n*n; 
+            c++;
+             
+        }
+         int a = n*n;
+        double b = a%Math.pow(10,c);
+         if(n==(int)b){
+            System.out.println("Yes");
+         }
+         else
+         System.out.println("No");
+        }
+    }
+
+
+
+    import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+      
+        Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        import java.io.*;
+        import java.util.*;
+        public class Solution {
+        
+            public static void main(String[] args) {
+              
+                Scanner scn=new Scanner(System.in);
+                int n=scn.nextInt();
+                int sq = n*n;
+        
+                 String num = String.valueOf(n);
+                 String square = String.valueOf(sq);
+                    if(square.endsWith(num)){
+                       System.out.println("Yes");
+                      }
+                    else
+                    System.out.println("No");
+                     }
+             }
+       }

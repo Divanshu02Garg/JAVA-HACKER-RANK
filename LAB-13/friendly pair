@@ -1,29 +1,71 @@
-Given two integer inputs, check whether they form a friendly pair or not. A pair of two numbers is said to be friendly if the ratio of the sum of the factors of a number except the number itself upon the number, for both numbers, matches. Print "Yes" if the numbers given form a friendly pair, otherwise print "No".
+// Given two integer inputs, check whether they form a friendly pair or not. A pair of two numbers is said to be friendly if the ratio of the sum of the factors of a number except the number itself upon the number, for both numbers, matches. Print "Yes" if the numbers given form a friendly pair, otherwise print "No".
 
-Input Format
+// Input Format
 
-Two integers
+// Two integers
 
-Constraints
+// Constraints
 
-None
+// None
 
-Output Format
+// Output Format
 
-A single string
+// A single string
 
-Sample Input 0
+// Sample Input 0
 
-6 28
-Sample Output 0
+// 6 28
+// Sample Output 0
 
-Yes
-Explanation 0
+// Yes
+// Explanation 0
 
-The factors of 6 and 28 except the numbers themselves are 1, 2, 3 and 1, 2, 4, 7, 14 respectively.
-Now the sum of factors of both the numbers are 6 and 28 respectively.
-When we divide the sums with the numbers we get 1 and 1 respectively.
-As the ratio of both the number match, they are considered as a friendly pair.
-Sample Input 1
+// The factors of 6 and 28 except the numbers themselves are 1, 2, 3 and 1, 2, 4, 7, 14 respectively.
+// Now the sum of factors of both the numbers are 6 and 28 respectively.
+// When we divide the sums with the numbers we get 1 and 1 respectively.
+// As the ratio of both the number match, they are considered as a friendly pair.
+// Sample Input 1
 
-5 25
+// 5 25
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int sum1=0;
+        int sum2=0;
+        for(int i=1;i<a;i++)
+        {
+            if(a%i==0)
+            {
+                sum1=sum1+i;
+            }
+        }
+        for(int i=1;i<b;i++)
+        {
+            if(b%i==0)
+            {
+                sum2=sum2+i;
+            }
+        }
+        
+        double f=(double)a/sum1;
+        double g=(double)b/sum2;
+      
+        if(f==g)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}

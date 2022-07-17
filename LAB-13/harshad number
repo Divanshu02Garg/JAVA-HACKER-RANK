@@ -39,17 +39,16 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        
-        Scanner scn=new Scanner(System.in);
-        int n=scn.nextInt();
-        int count =0;
-        for(int i=n;i>0;)
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int c=0;
+        for(int i=n;i>0;i=i/10)
         {
             int r=i%10;
-            count=count+r;
-            i=i/10;
+            c=c+r;
         }
-        if(n%count==0)
+        if(n%c==0)
         {
             System.out.println("Yes");
         }
@@ -59,3 +58,4 @@ public class Solution {
         }
     }
 }
+
