@@ -1,0 +1,26 @@
+Given two integers, 'a' and 'b'. swap the values stored in them using an extra variable and print them on screen.
+
+Input Format
+
+Two integers.
+
+Constraints
+
+none
+
+Output Format
+
+Two space separated integers
+
+Sample Input 0
+
+10 20
+Sample Output 0
+
+20 10
+Sample Input 1
+
+30 40
+Sample Output 1
+
+40 30

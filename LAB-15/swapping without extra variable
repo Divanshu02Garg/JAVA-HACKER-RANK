@@ -1,0 +1,30 @@
+Given two integers, 'a' and 'b' swap their value without using extra variable.
+
+Input Format
+
+Two space separated integers
+
+Constraints
+
+None
+
+Output Format
+
+Two space separated integers
+
+Sample Input 0
+
+10 30
+Sample Output 0
+
+30 10
+Sample Input 1
+
+406 720
+Sample Output 1
+
+720 406
+
+
+
+

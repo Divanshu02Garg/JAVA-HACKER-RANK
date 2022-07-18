@@ -1,0 +1,116 @@
+' Computer teacher is trying to start a coding committee. There are X students in the class and Y member committee has to be formed. In how many ways can it be done?
+
+' Input Format
+
+' There are two lines in the input:
+
+' X: Number of students in the class
+' Y: Number of students in the committee
+' Constraints
+
+' 0<=Y<=X<=15
+' Output Format
+
+' A single integer
+
+' Sample Input 0
+
+' 3 1
+' Sample Output 0
+
+' 3
+' Explanation 0
+
+' Assume three students, A,B and C. A single member committee has to be formed. Three different committees are posssible:
+
+' Option 1: Member (A)
+' Option 2: Member (B)
+' Option 3: Member (C)
+' Sample Input 1
+
+' 4 2
+' Sample Output 1
+
+' 6
+' Explanation 1
+
+' Assume 4 students A,B,C and D. A committee of size 2 has to be made. Available options are:
+
+' Option 1: Members (A,B)
+' Option 2: Members (A,C)
+' Option 3: Members (A,D)
+' Option 4: Members (B,C)
+' Option 5: Members (B,D)
+' Option 6: Members (C,D)
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int t=sc.nextInt();
+        long fact=1;
+        long fact1 =1;
+        long fact2=1;
+        if(n==0 || t==0)
+        {
+            System.out.println(0);
+        }
+        else
+        {
+        for(int i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        for(int i=1;i<=n-t;i++)
+        {
+            fact1=fact1*i;
+        }
+        for(int i=1;i<=t;i++)
+        {
+            fact2=fact2*i;
+        }
+        long com=fact/(fact1*fact2);
+        System.out.println(com);
+        }
+        
+    }
+}
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class main{
+     public static long fact(int n) {       
+         long fact =1;
+         
+         for(int i=1;i<=n;i++){
+             fact = fact*i;
+         }
+         return fact;
+     }
+    
+    
+    
+    
+    public static void main(String[] args) {
+          Scanner scn = new Scanner(System.in);
+        int value = scn.nextInt();
+        int val = scn.nextInt();
+       
+        
+        long fact1 = fact(value);
+        long fact2 = fact(val);
+        long fact3 = fact(value-val);
+        long answer = fact1/(fact2*fact3);
+        System.out.println(answer);
+   
+    }
+}

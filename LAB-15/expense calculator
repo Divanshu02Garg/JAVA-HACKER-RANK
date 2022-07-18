@@ -1,0 +1,46 @@
+Nobita has started a new job and is trying to keep track of his expenditure. Help him by creating an expense calculator. The calculator is fed with the expenditure which have occured throughout the month, it needs to output the total savings (positive or negative) during the month. The calculator needs to take input from the user until the user enters 'n' to quit. If the user enters 'y', it means there are more entries.
+
+NOTE: There is atleast one entry in the calculator.
+
+Input Format
+
+Each line of the input denotes a single entry of the calculator. A line contains three space separated inputs:
+
+A string ("Income" or "Expenditure").
+The value in rupees for income or expenditure.
+More input (y/n).
+Constraints
+
+None
+
+Output Format
+
+A single integer
+
+Sample Input 0
+
+Income 200 y
+Expenditure 20 y
+Expenditure 20 y
+Expenditure 20 y
+Income 30 n
+Sample Output 0
+
+170
+Explanation 0
+
+Saving = 200 - 20 - 20 - 20 + 30 = 170
+
+Sample Input 1
+
+Income 100 y
+Expenditure 80 y
+Expenditure 50 n
+Sample Output 1
+
+-30
+Explanation 1
+
+Saving = 100 - 80 - 50 = -30
+
+

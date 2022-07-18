@@ -1,0 +1,69 @@
+// Given an integer, replace all 0's with 1's.
+
+// Input Format
+
+// An integer
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 30902
+// Sample Output 0
+
+// 31912
+// Sample Input 1
+
+// 7900
+// Sample Output 1
+
+// 7911
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class main{
+
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int digit;
+        int x = 0;
+          int i =1;
+        int temp= 0 ;
+        if(n==0){
+            n=1;
+            System.out.print(n);
+        }
+       else{
+        while(n>0){
+           digit =  n %10;
+            if (digit==0){
+                digit =1;
+            }
+          x = (x*10)+digit;
+            n = n/10;
+        }    
+        while(x>0){
+          digit =  x %10;
+            temp = (temp*10)+digit;
+            x=x/10;
+        }System.out.print(temp);
+            
+            
+       }            
+    
+        
+    }
+}
+      

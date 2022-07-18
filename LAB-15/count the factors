@@ -1,0 +1,72 @@
+// Given two integers, 'a' and 'b'. Find out whether 'a' has exactly 'b' factors or not. In case it has exactly 'b' factors, print "Yes" else print no "No". In case any of the numbers('a' or 'b') is negative, print "Invalid Input".
+
+// Input Format
+
+// Two space separated integers.
+
+// Constraints
+
+// None
+
+// Output Format
+
+// A single string
+
+// Sample Input 0
+
+// 7 2
+// Sample Output 0
+
+// Yes
+// Explanation 0
+
+// The number 7 has exactly 2 factors: (1,7)
+
+// Sample Input 1
+
+// 12 3
+// Sample Output 1
+
+// No
+// Explanation 1
+
+// The number 12 has 6 factors: (1,2,3,4,6,12)
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+ 
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int b=sc.nextInt();
+        int count=0;
+        if(n<0 || b<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                count++;
+            }
+        }
+            if(count==b)
+            {
+                System.out.println("Yes");
+            }
+            else
+            {
+                System.out.println("No");
+            }
+        }
+    }
+
+}
