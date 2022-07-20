@@ -1,4 +1,4 @@
-Nobita has started a new job and is trying to keep track of his expenditure. Help him by creating an expense calculator. The calculator is fed with the expenditure which have occured throughout the month, it needs to output the total savings (positive or negative) during the month. The calculator needs to take input from the user until the user enters 'n' to quit. If the user enters 'y', it means there are more entries.
+<!-- Nobita has started a new job and is trying to keep track of his expenditure. Help him by creating an expense calculator. The calculator is fed with the expenditure which have occured throughout the month, it needs to output the total savings (positive or negative) during the month. The calculator needs to take input from the user until the user enters 'n' to quit. If the user enters 'y', it means there are more entries.
 
 NOTE: There is atleast one entry in the calculator.
 
@@ -41,6 +41,35 @@ Sample Output 1
 -30
 Explanation 1
 
-Saving = 100 - 80 - 50 = -30
+Saving = 100 - 80 - 50 = -30 -->
 
 
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scn= new Scanner(System.in);
+
+        
+       int a=0;
+           char c;
+        do{
+           String str = scn.next(); 
+             int x = scn.nextInt();
+            switch(str){
+                case "Income":
+                    a=a+x;
+                    break;
+                case "Expenditure":
+                    a=a-x;
+            }
+           
+            c= scn.next().charAt(0);
+        }while(c!='n');
+
+        
+        System.out.println(a);
+    }
+}
