@@ -1,0 +1,70 @@
+//  Given an array of integers, find the smallest element. (Do not use sort function. Use O(n) approach.)
+
+// Input Format
+
+// There are two lines in the input:
+
+// An integer N (size of array)
+// N integers (elements of the array)
+// Constraints
+
+// N>0
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 4 
+// 1 2 3 4
+// Sample Output 0
+
+// 1
+// Explanation 0
+
+// Array size is 4.
+// Array is : 1,2,3,4.
+// The smallest element is 1
+// Sample Input 1
+
+// 6
+// 5 2 8 12 67 3
+// Sample Output 1
+
+// 2 
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        int sum=a[0];
+        for(int i=0;i<n;i++)
+        {
+            if(sum>=a[i])
+            {
+                sum=a[i];
+            
+            }
+        }
+        System.out.println(sum);
+    }
+}

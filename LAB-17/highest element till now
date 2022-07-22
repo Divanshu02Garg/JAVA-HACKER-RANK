@@ -1,0 +1,69 @@
+// Given an array of size N, find the number of elements that are larger than all the elements prior to it in the array.
+
+// Note : Since there are no elements before first element so it should be considered in our answer.
+
+// Input Format
+
+// There are two lines in the input:
+
+// An integer N (size of array)
+// N integers (elements of the array)
+// Constraints
+
+// N>0
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 5
+// 2 4 1 5 3
+// Sample Output 0
+
+// 3
+// Explanation 0
+
+// As 2 is the first element, we will consider it. (count = 1)
+// 4 is greater than all of its previous elements (2) so it will be considered. (count = 2)
+// 5 is greater than all of its previous elements (2, 4, 1) so it will be considered. (count = 3) 
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        int s=0;
+        int c=0;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            int d=0;
+            s=a[i];
+            for(int j=0;j<=i;j++)
+            {
+                if(a[j]<s)
+                {
+                    d++;
+                }
+                
+            }
+            if(d==i)
+            {
+                c++;
+            }
+        }
+        System.out.println(c);
+    }
+}

@@ -1,0 +1,60 @@
+// Given an array of integers that contains elements in the range [0,10], count the frequency of each element. (You can use an extra array)
+
+// Input Format
+
+// There are two lines in the input:
+
+// An integer N (size of array)
+// N integers (elements of the array)
+// Constraints
+
+// N>0
+// 0 ≤ Arr[i] ≤ 10
+// Output Format
+
+// Output the frequency of each number from 0-10.
+
+// Sample Input 0
+
+// 10
+// 1 2 4 2 5 4 7 6 8 10
+// Sample Output 0
+
+// 0 1 2 0 2 1 1 1 1 0 1
+// Explanation 0
+
+// '0' appears zero times, '1' appears one time, '2' appears two times, '3' appears zero times ... and so on
+
+// Sample Input 1
+
+// 5
+// 1 2 3 1 2
+// Sample Output 1
+
+// 0 2 2 1 0 0 0 0 0 0 0
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+	/* Complete the Count_Freq() function */
+    public static void Count_Freq(int arr[], int n){
+      /* Enter your code here.*/
+      
+    } 
+  
+    public static void main(String[] args) {
+      	int n;
+      	Scanner sc = new Scanner(System.in);
+      	n = sc.nextInt();
+      	int arr[] = new int[n];
+      	for(int i=0;i<n;i++){
+        	int x = sc.nextInt();
+          	arr[i] = x;
+        }
+      	Count_Freq(arr,n);
+    }
+}

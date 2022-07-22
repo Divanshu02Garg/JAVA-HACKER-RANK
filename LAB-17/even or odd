@@ -1,0 +1,70 @@
+//  Given an integer array, fine the number of even and odd elements on the array.
+
+// Input Format
+
+// There are two lines in the input:
+
+// An integer N (size of array)
+// N integers (elements of the array)
+// Constraints
+
+// N>0
+
+// Output Format
+
+// Two space separated integers:
+
+// Number of even elements
+// Number of odd elements
+// Sample Input 0
+
+// 5
+// 2 4 3 5 1
+// Sample Output 0
+
+// 2 3
+// Explanation 0
+
+// The array contains 2 even (2,4) elements and 3 odd (3,5,1) elements.
+
+// Sample Input 1
+
+// 10
+// 23 5 43 3 32 4 5 76 7 4
+// Sample Output 1
+
+// 4 6
+// Explanation 1
+
+// The array contains 4 even (32, 4, 76, 4) and 6 odd (23, 5, 43, 3, 5, 7) elements.
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        int sum=0;
+        int e=0;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]%2==0)
+            {
+                e++;
+            }
+            else
+            {
+                sum++;
+            }
+        }
+        System.out.println(e+" "+sum);
+    }
+}

@@ -1,0 +1,53 @@
+// Given an array of integers, find the sum of all the elements in the array.
+
+// Input Format
+
+// There are two lines in the input:
+
+// An integer N (size of array)
+// N integers (elements of the array)
+// Constraints
+
+// N>0
+
+// Output Format
+
+// A single integer
+
+// Sample Input 0
+
+// 5
+// 1 3 2 4 5
+// Sample Output 0
+
+// 15
+// Sample Input 1
+
+// 10
+// 54 3 2 67 44 34 2 3 4 12
+// Sample Output 1
+
+// 225
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        int sum=0;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            sum=sum+a[i];
+        }
+        System.out.println(sum);
+    }
+}

@@ -1,0 +1,67 @@
+// Given an array of integers, find the largest and the smallest element. (Do not use sort function. Use O(n) approach. Traverse the array only once.)
+
+// Input Format
+
+// There are two lines in the input:
+
+// An integer N (size of array)
+// N integers (elements of the array)
+// Constraints
+
+// N > 0
+
+// Output Format
+
+// Two space separated integers, largest and the smallest element in the array.
+
+// Sample Input 0
+
+// 4 
+// 1 2 3 4
+// Sample Output 0
+
+// 4 1
+// Sample Input 1
+
+// 6
+// 5 2 8 12 67 3
+// Sample Output 1
+
+// 67 2
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        int sum=a[0];
+        int t=a[0];
+        for(int i=0;i<n;i++)
+        {
+            if(sum>=a[i])
+            {
+                sum=a[i];
+            
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(t<=a[i])
+            {
+                t=a[i];
+            
+            }
+        }
+        System.out.println(t+" "+sum);
+    }
+}
